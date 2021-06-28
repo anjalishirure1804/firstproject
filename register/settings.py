@@ -1,5 +1,3 @@
-
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -16,7 +14,6 @@ SECRET_KEY = '&fim+ft$xi6@97*csqjxf&@_k0%a2*kq3iko83!nm!sht!!ct='
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -65,6 +62,7 @@ WSGI_APPLICATION = 'register.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -104,9 +102,7 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
 
 USE_L10N = True
@@ -125,12 +121,10 @@ MEDIA_URL = '/media/'
 
 
 if DEBUG:
-
   STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
 else:
-
   STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
